@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto | TechNews</title>
+</head>
+<body>
+	<header>
+		<h1>Contacta-nos</h1>
+		<p>Envia a tua mensagem à equipa TechNews.</p>
+	</header>
+
+	<main>
+		<form action="#" method="post">
+			<fieldset>
+				<legend>Dados de contacto</legend>
+
+				<p>
+					<label for="nome">Nome completo</label><br>
+					<input type="text" id="nome" name="nome" autocomplete="name" minlength="2" maxlength="100" required>
+				</p>
+
+				<p>
+					<label for="email">Email</label><br>
+					<input type="email" id="email" name="email" autocomplete="email" maxlength="150" required>
+				</p>
+
+				<p>
+					<label for="telefone">Telefone</label><br>
+					<input type="tel" id="telefone" name="telefone" autocomplete="tel" pattern="[0-9 +()-]{9,20}" title="Indica um número de telefone válido." required>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>Mensagem</legend>
+
+				<p>
+					<label for="assunto">Assunto</label><br>
+					<input type="text" id="assunto" name="assunto" maxlength="120" required>
+				</p>
+
+				<p>
+					<label for="categoria">Categoria da mensagem</label><br>
+					<select id="categoria" name="categoria" required>
+						<option value="" selected disabled>Seleciona uma opção</option>
+						<option value="sugestao">Sugestão de notícia</option>
+						<option value="correcao">Correção de informação</option>
+						<option value="parceria">Parceria</option>
+						<option value="outro">Outro assunto</option>
+					</select>
+				</p>
+
+				<p>
+					<label for="mensagem">Mensagem</label><br>
+					<textarea id="mensagem" name="mensagem" rows="8" cols="50" minlength="10" maxlength="2000" required></textarea>
+				</p>
+			</fieldset>
+
+			<p>
+				<input type="checkbox" id="consentimento" name="consentimento" required>
+				<label for="consentimento">Autorizo o contacto para resposta a esta mensagem.</label>
+			</p>
+
+			<button type="submit">Enviar mensagem</button>
+		</form>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 TechNews</p>
+	</footer>
+</body>
+</html>
